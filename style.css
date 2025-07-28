@@ -1,0 +1,156 @@
+/* eventual stuff in here */
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
+body {
+    font-family: "Lilita One", sans-serif;
+    background-color: #0d0d0f;
+}
+.copyright {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    position: fixed;
+    inset: 0;
+    background: #0d0d0f;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    z-index: 9999;
+}
+
+.cc-content {
+    text-align: center;
+    max-width: 400px;
+    margin: 2em;
+    padding: 2em;
+    background: #1a1a1d;
+    border-radius: 1em;
+    box-shadow: 0 0 20px #000;
+}
+
+.cc-content a {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+button {
+    padding: 8px;
+    font-size: 1em;
+    background: #a5a5a5;
+    color: #000;
+}
+
+#ccList {
+    display: none;
+}
+
+#ccList li {
+    list-style: none;
+    line-height: 2em;
+}
+
+
+* {
+    /* border: red dotted 2px; */
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+}
+
+.anime-showcase-title {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    font-size: 13em;
+    filter: drop-shadow(1px 1px 20px black);
+}
+
+.anime-showcase-subheader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.anime-showcase-subheader h3 {
+    font-size: 2em;
+    background: url('pictures/covers/gojo.gif') center/90%;
+    background-clip: text; color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#showcase {
+    margin-top: 200px;
+    font-size: 12em;
+}
+
+#showcase {
+    background: url('pictures/covers/gojo.gif') top/100%;
+    background-clip: text; color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.anime-text-A {
+    background: url('pictures/covers/dadan2.webp') center/200%;
+    background-clip: text; color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.anime-text-N {
+    background: url('pictures/covers/gojo.webp') center/200%;
+    background-clip: text; color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.anime-text-I {
+    background: url('pictures/covers/nezuko.webp') center/150%;
+    background-clip: text; color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.anime-text-M {
+    background: url('pictures/covers/allmight2.webp') center/150%;
+    background-clip: text; color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.anime-text-E {
+    background: url('pictures/covers/hisoka.webp') right/270%;
+    background-clip: text; color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.background-parent {
+    position: relative;
+    display: inline-block;
+}
+
+.previewBg {
+    z-index: 0;
+    width: 100%; height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    pointer-events: none;
+    transform: scale(1.1);
+    filter: blur(10px);
+    transition: opacity 0.3s ease;
+}
+
+
+
+.letters,#showcase {
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(10px 20px 4px black);
+    transition: all 0.5s;
+}
+
+.letters:hover,#showcase:hover {
+    filter: drop-shadow(10px 10px 2px black);
+    transform: scale(1.05);
+    cursor: pointer;
+    transition: all 0.3s;
+}
